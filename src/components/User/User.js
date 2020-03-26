@@ -11,7 +11,7 @@ import {
 const User = props => {
   const uf = props.user;
   return (
-    <div key={uf.id} className="single_user">
+    <div  className="single_user">
       <div className="row">
         <div className="col-sm-4">
           <div className="team_thumnail">

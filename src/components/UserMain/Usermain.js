@@ -23,6 +23,7 @@ const Usermain = () => {
        users.map(user => <User
        user={user}
        handleHire={handleHire}
+       key={user.id}
        ></User>)
      }
       </div>
