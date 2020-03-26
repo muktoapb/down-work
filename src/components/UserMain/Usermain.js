@@ -6,8 +6,15 @@ import User from '../User/User';
 import HireInfo from '../HireInfo/HireInfo';
 
 const Usermain = () => {
-  console.log(usersdata);
   const [users, setusers] = useState(usersdata);
+  const [hireInfo, setHireInfo ] = useState([]);
+
+  // hire button click handeler 
+  const handleHire = (clickHire) =>{
+    
+    const newHire = [...hireInfo,clickHire]
+    setHireInfo(newHire);
+  }
   return (
     <div className="container">
     <div className="row">
@@ -15,11 +22,12 @@ const Usermain = () => {
       {
        users.map(user => <User
        user={user}
+       handleHire={handleHire}
        ></User>)
      }
       </div>
       <div className="col-md-4">
-        <HireInfo></HireInfo>
+        <HireInfo hireInfo={hireInfo}></HireInfo>
       </div>
     </div>
     </div>

@@ -33,7 +33,7 @@ const User = props => {
               <FontAwesomeIcon icon={faDollarSign} /> {uf.rate} / hour
             </p>
            
-            <button className="add">Hire</button>
+            <button className="add hirebtn" onClick={()=>props.handleHire(uf.rate)}>Hire</button>
           </div>
         </div>
       </div>
