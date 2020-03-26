@@ -1,0 +1,10 @@
+header.headerarea {
+    padding: 30px;
+    border-bottom: 5px solid #55dc60;
+    margin-bottom: 30px;
+}
+
+header.headerarea h1 {
+    color: #55dc60;
+    font-weight: 900;
+}
