@@ -10,8 +10,8 @@ const HireInfo = (props) => {
         <div className="side_bar sticky-top">
             <h3>Team Info</h3>
     <p>Total Hire: {hireData.length}</p>
-    <p>Total Cost: {total}</p>
-            <p>Market Fee: {mf} (20%)</p>
+    <p>Total Cost: ${total}</p>
+            <p>Market Fee: ${mf} (20%)</p>
             <p className="grand_total">Grand Total: ${gradtotal}</p>
         </div>
     );
