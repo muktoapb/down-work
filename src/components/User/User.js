@@ -10,6 +10,19 @@ import {
 
 const User = props => {
   const uf = props.user;
+  const rf = props.hirebtn;
+  // console.log(rf);
+
+  // matching click id 
+  const uid = uf.id;
+  const uMatch = rf.includes(uid);
+  // console.log(uMatch);
+  // let tb = <button className="add hirebtn" onClick={()=>props.handleHire(uf)}>Hire</button>
+  if(uMatch){
+    var tb = <button className="remove hirebtn" onClick={()=>props.handleHireRemove(uf)}>Remove</button>;
+  }else{
+    var tb = <button className="add hirebtn" onClick={()=>props.handleHire(uf)}>Hire</button>
+  }
   return (
     <div  className="single_user">
       <div className="row">
@@ -32,8 +45,8 @@ const User = props => {
             <p>
               <FontAwesomeIcon icon={faDollarSign} /> {uf.rate} / hour
             </p>
-           
-            <button className="add hirebtn" onClick={()=>props.handleHire(uf.rate)}>Hire</button>
+           {tb}
+            
           </div>
         </div>
       </div>

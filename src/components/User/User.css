@@ -24,8 +24,11 @@ button.hirebtn {
   text-transform: uppercase;
 }
 .team_details {
-    padding: 30px 0;
+    padding: 30px 10px;
     position: relative;
+}
+.team_thumnail img {
+  width: 100%;
 }
 
 .contact_info {
@@ -49,3 +52,6 @@ button.hirebtn {
 }
 
 .contact_info a.phone {background: #f30808;}
+button.remove.hirebtn {
+  background: #ef0a0a;
+}

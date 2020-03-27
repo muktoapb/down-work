@@ -2,9 +2,7 @@ import React from 'react';
 import './HireInfo.css'
 const HireInfo = (props) => {
     const hireData = props.hireInfo;
-    console.log(hireData);
     const total = hireData.reduce((total,currentRate) => total + currentRate,0);
-
     const mf = Number((total*20/100).toFixed(2));
     const gradtotal = total+mf;
     
